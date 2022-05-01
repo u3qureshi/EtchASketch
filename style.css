@@ -1,0 +1,46 @@
+* {
+    font-family: 'Ms Madi', cursive;
+    font-size: 43px;
+}
+
+html {
+    background: url(./images/bi.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'Water Brush', cursive;
+    font-size: 70px;
+}
+
+.grid-container {
+    width: 500px;
+    height: 500px;
+    display: grid;
+    border: 5px solid red;
+}
+
+.text {
+    font-weight: 40;
+}
+
+.hint {
+    font-weight: 40;
+    font-size: x-large;
+}
+
+span {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    letter-spacing: 2px;
+    margin: 5px;
+}
+
+.doodle {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+}

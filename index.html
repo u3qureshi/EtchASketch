@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=Permanent+Marker&family=Water+Brush&display=swap" rel="stylesheet">
+    <title>Etch-A-Sketch</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Etch-A-Sketch</h1>
+        <div>
+            <img class="doodle" src="./images/doodle.png" alt="doodlebob" title="Me Hoy Minoy!">
+        </div>
+        <div class="content">
+            <div class="grid-container"></div>
+            <h2 class="mode">MODE: Drawing Stopped</h2>
+            <h6 class="hint">HINT: Click the pad to <span>►/■</span> drawing</h6>
+            <div class="buttons">
+                <button onclick="alterColor('black')">Black</button>
+                <button onclick="alterColor('rainbow')">Rainbow</button>
+                <button onclick="alterColor('grayscale')">Grayscale</button>
+                <button onclick="alterColor('bee')">Honey Bee</button>
+                <button onclick="alterColor('white')">Eraser</button>
+                <button class="clearButton" onclick="clearPad()">Wipe Pad</button>
+            </div>
+            <div class="interactive">
+                <input type="text" placeholder="Grid Size" value="16" onchange="alterSize(this.value)">
+                <button>Set Size</button>
+                <h4 class="text">Enter a value from 2 - 200</h4>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script src="main.js"></script>
+
+
+</html>
