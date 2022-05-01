@@ -4,6 +4,16 @@ let count = 0;
 let click = false;
 initializeGrid(16);
 
+const slider = document.querySelector('#my-slider');
+const sliderOutput = document.querySelector('.slider-output');
+slider.oninput = function() {
+    let input = this.value;
+    const text = document.querySelector('.text');
+
+    initializeGrid(input);
+    sliderOutput.innerText = `Grid size: ${input} x ${input}`
+}
+
 function initializeGrid(size) {
     currentSize = size;
     const grid = document.querySelector(".grid-container");
@@ -22,17 +32,6 @@ function initializeGrid(size) {
         cell.addEventListener('mouseover', colorCell);
         grid.insertAdjacentElement("beforeend", cell);
     }
-}
-
-function alterSize(input) {
-
-    const text = document.querySelector('.text');
-
-    if (input >= 2 && input <= 200) {
-        initializeGrid(input);
-        text.innerText = 'Enter a value from 2 - 200';
-    } else
-        text.innerText = 'Invalid input, please enter a value between 2 - 200';
 }
 
 document.querySelector('.grid-container').addEventListener('click', () => {
@@ -76,3 +75,13 @@ function alternatingBee() {
     else
         return 'yellow';
 }
+// function alterSize(input) {
+
+//     const text = document.querySelector('.text');
+
+//     if (input >= 2 && input <= 200) {
+//         initializeGrid(input);
+//         text.innerText = 'Enter a value from 2 - 200';
+//     } else
+//         text.innerText = 'Invalid input, please enter a value between 2 - 200';
+// }

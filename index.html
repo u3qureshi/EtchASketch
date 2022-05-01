@@ -31,13 +31,17 @@
                     <button class="bee-button" onclick="alterColor('bee')">Honey Bee</button>
                     <button class="eraser-button" onclick="alterColor('white')">Eraser</button>
                     <button class="clear-button" onclick="clearPad()">Wipe Pad</button>
+                    <input title="Select a color" class="set-button" type="color" id="head" name="head" value="#FF0000" oninput="alterColor(this.value)">
                 </div>
             </div>
 
             <div class="interactive">
-                <input type="text" maxlength="3" placeholder="Grid Size" value="16" onchange="alterSize(this.value)">
-                <button class="set-button">Set Grid Size</button>
-                <h4 class="text">Enter a value from 2 - 200</h4>
+                <h4 class="text">Select a grid size</h4>
+                <h6 class="warning">** WARNING: changing the grid size will clear the sketch pad **</h6>
+                <div class="slidecontainer">
+                    <input type="range" min="2" max="100" value="16" class="slider" id="my-slider">
+                    <div class="slider-output">grid size: 16 x 16</div>
+                </div>
                 <h5 id="copyright">
                     Copyright © 2022 UsmanQureshi
                     <a href="https://github.com/u3qureshi/EtchASketch" target="_blank" class="fa fa-github" style="font-size: 1.3em;"></a>
@@ -45,6 +49,8 @@
             </div>
         </div>
 
+    </div>
+    <div>
     </div>
 
 </body>
