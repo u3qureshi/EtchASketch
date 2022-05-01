@@ -1,6 +1,7 @@
 * {
-    font-family: 'Ms Madi', cursive;
-    font-size: 43px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 35px;
+    color: black;
 }
 
 html {
@@ -11,36 +12,243 @@ html {
     background-size: cover;
 }
 
-h1 {
+body {
+    background-color: transparent;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+.title {
     font-family: 'Water Brush', cursive;
     font-size: 70px;
+    color: black;
+    font-weight: 900;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: -30px;
+    margin-top: -30px;
+}
+
+.grid-container-container {
+    display: flex;
+    justify-content: center;
 }
 
 .grid-container {
     width: 500px;
     height: 500px;
     display: grid;
-    border: 5px solid red;
+    border: 5px solid darkblue;
+    background-color: white;
+}
+
+.mode {
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
 }
 
 .text {
-    font-weight: 40;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    margin-top: -9px;
 }
 
 .hint {
-    font-weight: 40;
-    font-size: x-large;
+    font-weight: 100;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    margin-top: -35px;
+    color: rgb(2, 2, 198);
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
+}
+
+button {
+    font-size: 25px;
+    font-weight: 900;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+.black-button {
+    background-color: black;
+    color: white;
+    top: 50%;
+    box-shadow: 0px 0px 2px 2px rgb(255, 255, 255);
+}
+
+.black-button:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 2px 2px rgb(0, 0, 0);
+}
+
+.rainbow-button {
+    background-image: url('./images/rainbow-btn.png');
+    background-size: cover;
+    box-shadow: 0px 0px 2px 2px rgb(232, 244, 1);
+}
+
+.rainbow-button:hover {
+    background: lightseagreen;
+    color: greenyellow;
+    transition: 0.5s;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 2px 2px lightcoral;
+}
+
+.grayscale-button {
+    background-color: gray;
+    color: black;
+    box-shadow: 0px 0px 2px 2px black;
+}
+
+.grayscale-button:hover {
+    background: rgb(71, 70, 70);
+    color: rgb(141, 140, 140);
+    transition: 0.5s;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 2px 2px white;
+}
+
+.bee-button {
+    background-image: url('./images/honey-btn.png');
+    background-size: cover;
+    box-shadow: 0px 0px 2px 2px yellow;
+}
+
+.bee-button:hover {
+    background: rgb(100, 100, 0);
+    color: yellow;
+    transition: 0.5s;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 2px 2px white;
+}
+
+.eraser-button {
+    background-color: pink;
+    color: black;
+    box-shadow: 0px 0px 2px 2px lightcoral;
+}
+
+.eraser-button:hover {
+    background: lightcoral;
+    color: rgb(255, 30, 68);
+    transition: 0.5s;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 2px 2px white;
+}
+
+.clear-button {
+    background-color: white;
+    color: black;
+    box-shadow: 0px 0px 2px 2px whitesmoke;
+}
+
+.clear-button:hover {
+    color: white;
+    transition: 0.5s;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 2px 2px gray;
+}
+
+.set-button {
+    margin-top: 4px;
+    background-image: url('./images/set-btn.jpg');
+    color: white;
+    background-size: cover;
+    box-shadow: 0px 0px 2px 2px white;
+}
+
+.set-button:hover {
+    background-image: url('./images/set-btn2.jpg');
+    color: black;
+    transition: 0.5s;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 2px 2px black;
+}
+
+.buttons {
+    border: 5px outset yellow;
+    padding: 10px;
+    width: fit-content;
+}
+
+input {
+    border-radius: 20%;
+    border: 5px solid black;
+    width: 60px;
 }
 
 span {
     font-family: 'Courier New', Courier, monospace;
     font-size: x-large;
+    font-weight: 800;
     letter-spacing: 2px;
-    margin: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: rgb(2, 2, 198);
 }
 
 .doodle {
-    width: 200px;
-    height: auto;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
+    border: 5px solid yellow;
+    margin-left: 30px;
+    align-self: center;
+}
+
+.interactive {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#copyright {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+
+.fa {
+    padding-left: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: blue;
+}
+
+
+/* Add a hover effect if you want */
+
+.fa:hover {
+    color: green;
+    transition: 0.5s;
+    transform: scale(1.4);
 }
